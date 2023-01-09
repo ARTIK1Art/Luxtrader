@@ -1,0 +1,150 @@
+//====================================================================================================
+.footer {
+	padding: 45px 0;
+	background-color: #1c242a;
+	// .footer__container
+	a {
+		small {
+			font-size: 30px;
+			position: relative;
+			top: -9px;
+			left: 0;
+		}
+	}
+	&__container {
+		display: flex;
+		@media (max-width: 767px) {
+			display: block;
+			text-align: center;
+		}
+	}
+
+	// .footer__column
+
+	&__column {
+		flex: 0 1 33.333%;
+		&:last-child {
+			@media (max-width: 767px) {
+				order: 2;
+			}
+		}
+		&:nth-child(2) {
+			@media (max-width: 767px) {
+				order: 1;
+			}
+		}
+		&:first-child {
+			flex: 0 0 180px;
+			@media (max-width: 767px) {
+				order: 3;
+			}
+		}
+		&_full {
+			flex: 1 1 auto;
+		}
+	}
+
+	// .footer__logo
+
+	&__logo {
+		margin-bottom: 25px;
+		@media (max-width: 767px) {
+			margin-bottom: 10px;
+		}
+	}
+
+	// .footer__info
+
+	&__info {
+		font-size: 14px;
+		color: #bb9c66;
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
+
+	// .footer__menu
+
+	&__menu {
+		padding: 0 30px;
+		@media (max-width: 767px) {
+			padding: 0 0px;
+		}
+	}
+	&__contacts {
+		text-align: right;
+		padding-top: 10px;
+		@media (max-width: 767px) {
+			text-align: center;
+		}
+	}
+	// .footer__list
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		@media (max-width: 767px) {
+			justify-content: center;
+		}
+		li {
+			margin: 15px 7px 0px 7px;
+		}
+	}
+
+	// .footer__link
+
+	&__link {
+		font-family: "PFDinTextCondProR";
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #ffffff;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	// .footer__phone
+
+	&__phone {
+		display: block;
+		white-space: nowrap;
+		font-family: "BravoRGRegular";
+		font-size: 25px;
+		text-transform: uppercase;
+		margin-bottom: 7px;
+		color: #bb9c66;
+		font-size: 50px;
+		@media (max-width: 991px) {
+			font-size: 40px;
+			small {
+				font-size: 20px;
+			}
+		}
+	}
+
+	// .footer__callback
+
+	&__callback {
+		font-size: 14px;
+		color: #bb9c66;
+		display: inline-block;
+		background: url("../img/icons/callback.svg") left no-repeat;
+		padding-left: 12px;
+		span {
+			border-bottom: 1px dashed #bb9c66;
+		}
+		@media (max-width: 767px) {
+			margin-bottom: 10px;
+		}
+	}
+	&__info_2 {
+		@extend .footer__info;
+		display: none;
+		@media (max-width: 767px) {
+			display: block;
+		}
+	}
+}
+
+//====================================================================================================
